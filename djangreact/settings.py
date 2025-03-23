@@ -48,7 +48,8 @@ CORS_ALLOWED_ORIGINS = [
 ALLOWED_HOSTS = [
     'jayeshparmar2470.github.io',  # GitHub Pages frontend domain
     'tours-travels-django-backend.onrender.com',  # Render backend domain
-    'localhost',  # Localhost for local development
+    '127.0.0.1',
+    'localhost'
 ]
 # ALLOWED_HOSTS = ['https://tours-travels-django-backend.onrender.com', 'localhost']
 DEBUG = False

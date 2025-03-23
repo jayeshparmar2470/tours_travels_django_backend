@@ -4,11 +4,11 @@ from .models import Tour,Booking
 from django.contrib.auth.models import User
 from .serializers import UserRegistrationSerializer,UserLoginSerializer,UserInfoSerializer,TourSerializer,BookingSerializer,ShowBookingSerializer
 from django.contrib.auth import authenticate, login
-from rest_framework.response import Response,HttpResponse
+from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view,permission_classes
 from rest_framework.permissions import IsAuthenticated
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404,HttpResponse
 
 def home(request):
     return HttpResponse("this is home")
