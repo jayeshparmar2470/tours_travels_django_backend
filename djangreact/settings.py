@@ -85,12 +85,15 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
+
+ "corsheaders.middleware.CorsMiddleware",  # Add this line
+    "django.middleware.common.CommonMiddleware",  # Ensure this is after CorsMiddleware
+
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
+
      'whitenoise.middleware.WhiteNoiseMiddleware',  # Added this line
     
 ]
