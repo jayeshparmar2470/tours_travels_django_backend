@@ -97,7 +97,7 @@ MIDDLEWARE = [
 ]
 
 # Allow WhiteNoise to serve media files   adddeddd
-WHITENOISE_MANIFEST_STRICT = False
+# WHITENOISE_MANIFEST_STRICT = False
 
 
 
