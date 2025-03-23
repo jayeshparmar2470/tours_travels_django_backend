@@ -40,6 +40,8 @@ CORS_ALLOW_CREDENTIALS = True  # Set to True if you're using cookies or sessions
 
 CORS_ALLOWED_ORIGINS = [
     'https://jayeshparmar2470.github.io',  # Add your GitHub Pages domain here
+    'https://tours-travels-django-backend.onrender.com',  # Backend domain if necessary
+
 ]
 
 
