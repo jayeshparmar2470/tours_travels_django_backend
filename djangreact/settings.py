@@ -41,7 +41,7 @@ CORS_ALLOW_CREDENTIALS = True  # Set to True if you're using cookies or sessions
 CORS_ALLOWED_ORIGINS = [
     'https://jayeshparmar2470.github.io',  # Add your GitHub Pages domain here
     'https://tours-travels-django-backend.onrender.com',  # Backend domain if necessary
-
+    # 'localhost:3000'
 ]
 
 
@@ -131,6 +131,21 @@ WSGI_APPLICATION = "djangreact.wsgi.application"
 DATABASES = {
     'default': dj_database_url.config(default='postgresql://jayeshparmar:eBNcAudH6MyLQ7R9CH8PtySOWTMxPVB0@dpg-cvfv84lds78s73fp33qg-a.singapore-postgres.render.com/tour_travels_django_database')
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     },
+#     "postgres": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "tour_travels_django_database",
+#         "USER": "jayeshparmar",
+#         "PASSWORD": "eBNcAudH6MyLQ7R9CH8PtySOWTMxPVB0",
+#         "HOST": "dpg-cvfv84lds78s73fp33qg-a.singapore-postgres.render.com",
+#         "PORT": "5432",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

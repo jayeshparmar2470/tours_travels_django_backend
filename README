@@ -1,0 +1,17 @@
+# python manage.py dumpdata --exclude=contenttypes --exclude=auth.permission --exclude=admin.logentry --exclude=sessions.session --exclude=authtoken.token > data.json
+
+# python run1.py
+
+# python manage.py loaddata data.json --database=postgres
+
+# python manage.py shell
+
+
+# from django.db import connections
+
+# # Query the PostgreSQL database
+# with connections['postgres'].cursor() as cursor:
+#     cursor.execute("SELECT * FROM tours LIMIT 5;")
+#     rows = cursor.fetchall()
+#     for row in rows:
+#         print(row)
