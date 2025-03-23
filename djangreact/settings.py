@@ -40,7 +40,7 @@ SECRET_KEY = "django-insecure-=qz_v96gwtvt4$70#=*3y-kj^t@3eqtpgxqpj6ymqy(c9+8+6#
 
 
 
-ALLOWED_HOSTS = ['your-app.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['https://tours-travels-django-backend.onrender.com', 'localhost']
 DEBUG = False
 
 # Application definition
