@@ -38,9 +38,17 @@ SECRET_KEY = "django-insecure-=qz_v96gwtvt4$70#=*3y-kj^t@3eqtpgxqpj6ymqy(c9+8+6#
 # CORS_ALLOW_ALL_ORIGINS = True  # Set to True to allow all origins (not recommended for production)
 # CORS_ALLOW_CREDENTIALS = True  # Set to True if you're using cookies or sessions
 
+CORS_ALLOWED_ORIGINS = [
+    'https://jayeshparmar2470.github.io',  # Add your GitHub Pages domain here
+]
 
 
-ALLOWED_HOSTS = ['https://tours-travels-django-backend.onrender.com', 'localhost']
+ALLOWED_HOSTS = [
+    'jayeshparmar2470.github.io',  # GitHub Pages frontend domain
+    'tours-travels-django-backend.onrender.com',  # Render backend domain
+    'localhost',  # Localhost for local development
+]
+# ALLOWED_HOSTS = ['https://tours-travels-django-backend.onrender.com', 'localhost']
 DEBUG = False
 
 # Application definition
