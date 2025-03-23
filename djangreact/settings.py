@@ -92,7 +92,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 
-     'whitenoise.middleware.WhiteNoiseMiddleware',  # Added this line
+    #  'whitenoise.middleware.WhiteNoiseMiddleware',  # Added this line
     
 ]
 
