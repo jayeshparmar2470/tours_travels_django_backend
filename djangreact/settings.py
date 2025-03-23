@@ -22,11 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Media settings BY US
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-MEDIA_URL = 'https://tours-travels-django-backend.onrender.com/media'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -97,6 +95,9 @@ MIDDLEWARE = [
      'whitenoise.middleware.WhiteNoiseMiddleware',  # Added this line
     
 ]
+
+# Allow WhiteNoise to serve media files   adddeddd
+WHITENOISE_MANIFEST_STRICT = False
 
 
 
