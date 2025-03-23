@@ -124,10 +124,13 @@ WSGI_APPLICATION = "djangreact.wsgi.application"
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-}
+# DATABASES = {
+#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+# }
 
+DATABASES = {
+    'default': dj_database_url.config(default='postgresql://jayeshparmar:eBNcAudH6MyLQ7R9CH8PtySOWTMxPVB0@dpg-cvfv84lds78s73fp33qg-a.singapore-postgres.render.com/tour_travels_django_database')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
